@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import MyNavBar from './components/MyNavBar'
 import MyFooter from './components/MyFooter'
+import Search from './components/Search'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             }
           />
           <Route path="/info" element={<h1>INFO COMPONENT</h1>} />
+          <Route path="/search" element={<Search />} />
           <Route path="*" element={<h1>NOT FOUND</h1>} />
         </Routes>
         {/* I'll put a footer here */}
